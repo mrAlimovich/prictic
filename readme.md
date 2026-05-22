@@ -20,7 +20,7 @@ git pull origin master
 
 
 
-## python foundation:
+## Python Foundation:
 
 --Primitive Variables
 --Function
@@ -30,7 +30,4 @@ git pull origin master
 --Operation & Conditions
 --Loops
 
-
-
-
-`````
+```
