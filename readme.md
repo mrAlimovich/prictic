@@ -29,11 +29,6 @@ git pull origin master
 --Class deep dive
 --Operation & Conditions
 --Loops
---tools
---advise
-
-
-
 
 
 
