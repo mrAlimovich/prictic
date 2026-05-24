@@ -44,3 +44,17 @@ print("result3:", result3)
 
 result4 = give_great("Odiljon")
 print("result4:", result4)
+
+
+print("==== SCOPE ====")
+b = 100  # 3
+
+
+# DEFINE
+def calculate(a):  # 2
+    c = a * b  # 1
+    print(f"the c value: {c}")
+
+
+# CALL
+calculate(5)
