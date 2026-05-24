@@ -5,13 +5,13 @@
 (4) Scope
 '''
 
-print("==== DEFINE vs CALL ====")
+print("==== DEFINE (parameter) vs CALL (argument) ====")
 # built in function > print() type()
 # Function - rousable block of code!
 # Instead of block {} in JAVA, Python uses indentation!
 
 
-# DEFINE - build
+# DEFINE - parameter
 def great(a):
     print(f"How do you do, {a}")
 
@@ -21,9 +21,26 @@ def greating(b):
     return f"Hi {b}"
 
 
-# CALL - execute
+# CALL - argument
 result1 = great("Ikromjon")
 print("result1:", result1)
 
 result2 = greating("Odil")
 print("result2:", result2)
+
+
+print("==== Keyword & defult arguments ====")
+
+
+# DEFINE
+def give_great(name, age=22):
+    print("give_great is executed")
+    return f"HI {name}, you are {age} years old"
+
+
+# CALL
+result3 = give_great(name="Odil", age=28)
+print("result3:", result3)
+
+result4 = give_great("Odiljon")
+print("result4:", result4)
