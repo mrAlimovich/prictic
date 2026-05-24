@@ -7,8 +7,8 @@ print("result:", result)
 
 ''' In Python, there are builtin tools:
 (1) TYPES > int float str list dict
-(2) FUNCTION > print() len() input() type()
-(3) CONSTANS > True False none
+(2) FUNCTION > print() len() input() type() str() int()
 '''
+
 
 print(dir(__builtins__))
