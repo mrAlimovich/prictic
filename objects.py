@@ -7,7 +7,7 @@
 
 import array  # package/module
 import math  # package
-from math import ceil, asin
+from math import ceil
 print("==== What is object ==== ")
 # An object has state and method properties.
 # Everything is object in Python!
@@ -25,3 +25,21 @@ print("result1:", result1)
 
 result2 = ceil(98.7)
 print("result2:", result2)
+
+
+print("==== Error handling system ==== ")
+car_dict = dict(name="Tayota", year=2026, elecktic=True)
+
+try:
+    print("passed here")
+    a = car_dict.speed
+    result = car_dict["origin"]
+    print("result:", result)
+except KeyError as err:
+    print("No origin state property found:", err)
+except AttributeError as err:
+    print("No speed found:", err)
+else:
+    print("Executed successfully without errors")
+finally:
+    print("Final closing logic")
