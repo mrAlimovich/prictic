@@ -1,5 +1,5 @@
 ''' CLASS deep diving
-    (1) ENCAPSOLATION
+    (1) ENCAPSOLATION <
     (2) INHERITENCE
     (3) POLIMORPHISM
 '''
@@ -59,6 +59,7 @@ try:
 except Exception as err:
     print("No target state found:", err)
 
+# getter vs setter
 print("owner before", my_account.holder)  # state
 # my_account.change_ownership("Ikromjon")
 my_account.holder = "Ikromjon"

@@ -22,12 +22,17 @@ git pull origin master
 
 ## Python Foundation:
 
---Primitive Variables
---Function
---Object
---Class
---Class deep dive
---Operation & Conditions
---Loops
-
-```
+-- Primitive Variables
+-- Function
+-- Object
+-- Class about 
+-- Class deep dive > Encapsulation
+-- Class deep dive > Inheritence Polimorphism
+-- Operation & Conditions
+-- Loops
+-- Tuple
+-- list
+-- Array
+-- Comprehension
+-- Debugging
+--```
