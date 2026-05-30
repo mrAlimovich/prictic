@@ -60,12 +60,21 @@ print("-----")
 def introduce(**kwargs):
     print(f"the type(**kwarg) value: {type(kwargs)}")
     print(f"Hi, I am {kwargs["name"]} and I am {kwargs["age"]} years old!")
-    pass
 
 
 # CALL
 introduce(name="ODIL", age=36)
 introduce(name="IKA", age=40, single=True)
+print("-----")
+
+
+def greating(*args, **kwargs):
+    print("*args >", args)
+    print("**kwargs >", kwargs)
+
+
+# CALL
+greating("HI", True, 10, name="Odil", age=22)
 
 
 print("==== Zip ====")
