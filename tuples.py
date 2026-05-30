@@ -40,7 +40,7 @@ print("z:", z)  # list
 
 # *args > tuple
 def calculate(*args):
-    print("*args", args)
+    print("*args >", args)
     total = 1
     for x in args:
         total *= x
@@ -50,10 +50,22 @@ def calculate(*args):
 
 # CALL
 calculate(1, 7, 2, 3)
-print("-----")
 calculate(0, 2, 300)
-print("-----")
 calculate(5, 7)
+
+print("-----")
+# **kwargs > dictionary
+
+
+def introduce(**kwargs):
+    print(f"the type(**kwarg) value: {type(kwargs)}")
+    print(f"Hi, I am {kwargs["name"]} and I am {kwargs["age"]} years old!")
+    pass
+
+
+# CALL
+introduce(name="ODIL", age=36)
+introduce(name="IKA", age=40, single=True)
 
 
 print("==== Zip ====")
