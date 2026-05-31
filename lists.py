@@ -2,7 +2,7 @@
 (1) Working with list
 (2) List methods
 (3) Lambda Function
-(4) enumarate, map, and filter
+(4) enumerate, map, and filter
 '''
 
 print("===== Working with list =====")
@@ -110,5 +110,40 @@ print("people(1)", peaple)
 peaple.sort(key=lambda person: person[1])
 print("people(2)", peaple)
 
+print("===== enumerate, map, and filter =====")
+# enumerate for index & value
 
-print("===== enumarate, map, and filter =====")
+animals = ["dog", "cat", "fish"]  # list
+for element in enumerate(animals):
+    print("element:", element)
+
+for (index, value) in enumerate(animals):
+    print(f"the index: {index} and value: {value}")
+
+print("-----")
+# similar in dictionary
+car_obj = dict(brand="Ferrari", year=2025)  # dict
+reselt = car_obj.items()
+for (key, value) in reselt:
+    print(f"the key: {key} and value {value}")
+
+print("-----")
+# map
+cars = [
+    ("tiko", 78),
+    ("Damas", 87),
+    ("nexia", 116),
+    ("lada", 109),
+    ("epica", 33)
+]
+
+result_map = map(lambda car: car[0], cars)
+print(f"the result_map: {result_map} and type: {type(result_map)}")
+new_cars = list(result_map)
+print("new_cars", new_cars)
+
+print("-----")
+# filter
+result_filter = filter(lambda car: car[1] > 80, cars)
+print(f"the result_filter: {result_filter} and type: {type(result_filter)}")
+print(list(result_filter))
