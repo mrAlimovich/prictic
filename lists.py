@@ -82,11 +82,33 @@ print("sort default:", numbers)
 numbers.sort(reverse=True)
 print("sort reverse:", numbers)
 
-# imutable sorted
+# imutable > sorted function & index() method
 numbs = [2, 20, 12, 100]
 new_numbs = sorted(numbs)
 print(f"the sorted numbs: {numbs} and new_numbs: {new_numbs}")
 
 
 print("===== Lambda Function =====")
+# lambda is small anonymous function:
+def calculate(x, y): return x * y
+
+
+reselt = calculate(3, 5)
+print("result:", reselt)
+
+peaple = [
+    ("Ika", 20),
+    ("Odi", 19),
+    ("Ali", 25),
+    ("Bek", 30),
+    ("Xon", 40)
+]
+peaple.sort()
+print("people(1)", peaple)
+
+# sort by age via lambda
+peaple.sort(key=lambda person: person[1])
+print("people(2)", peaple)
+
+
 print("===== enumarate, map, and filter =====")
