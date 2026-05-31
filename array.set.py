@@ -5,6 +5,8 @@
 '''
 
 from array import array
+print("===== Array =====")
+
 numbers = array("i", [1, 4, 5, 7, 8, 41])
 print("numbers(1):", numbers)
 
@@ -19,9 +21,32 @@ print("numbers(3):", numbers)
 del numbers[0:2]
 print("numbers(4):", numbers)
 
-
-print("===== Array =====")
-
-
 print("===== Set =====")
-print("===== Specific operators with set =====")
+# set of unique collection without keeping order!
+new_numbers = array("i", [1, 4, 7, 5, 7, 5, 4, 4, 7, 8, 41])
+numbs_set = set(new_numbers)
+
+print(f"the numbs_set: {numbs_set} and tyoe {type(numbs_set)}")
+
+numbs_set.add(200)
+print("numbs_set(1):", numbs_set)
+
+numbs_set.add(7)
+print("numbs_set(2):", numbs_set)
+
+
+print("===== Specific operators =====")
+# - & ^ |
+
+a = {10, 20, 50}
+b = {20, 40}
+
+result1 = a | b  # umion
+result2 = a & b  # intersection
+result3 = a - b  # difference
+result4 = a ^ b  # synmetric difference
+
+print("result1:", result1)
+print("result2:", result2)
+print("result3:", result3)
+print("result4:", result4)
