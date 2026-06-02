@@ -35,7 +35,7 @@ numbs_set.add(7)
 print("numbs_set(2):", numbs_set)
 
 
-print("===== Specific operators =====")
+print("===== Specific operators with set =====")
 # - & ^ |
 
 a = {10, 20, 50}
