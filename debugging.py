@@ -4,6 +4,7 @@
     (3) Debugging
 '''
 
+from PIL import Image
 import turtle
 print("===== Python Packages & Core Package =====")
 ''' Python Packages/Modules: Core, File and Extermal '''
@@ -34,4 +35,14 @@ print("DONE")
 
 
 print("===== Package Manager & Extermal Package =====")
+''' Package Managers:pip pipenv npm yarn composer brew '''
+# Extermal Package > http://pypi.org/
+
+
+with Image.open("material/images.jpg") as img_obj:
+    resize_img = img_obj.resize((200, 200))
+    resize_img.show()
+    resize_img.save("material/sample.jpg")
+
+
 print("===== Debugging =====")
