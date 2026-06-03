@@ -38,11 +38,22 @@ print("===== Package Manager & Extermal Package =====")
 ''' Package Managers:pip pipenv npm yarn composer brew '''
 # Extermal Package > http://pypi.org/
 
-
-with Image.open("material/images.jpg") as img_obj:
-    resize_img = img_obj.resize((200, 200))
-    resize_img.show()
-    resize_img.save("material/sample.jpg")
+# with Image.open("material/images.jpg") as img_obj:
+#    resize_img = img_obj.resize((200, 200))
+#    resize_img.show()
+#    resize_img.save("material/sample.jpg")
 
 
 print("===== Debugging =====")
+
+
+def get_summary(*args):  # Define
+    total_amount = 0
+    for a in args:
+        total_amount += a
+    return total_amount  # solve the bug via debugging
+
+
+test = 100
+result = get_summary(1, 2, 3, 4, 5)  # Call
+print("result:", result)

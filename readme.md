@@ -16,9 +16,7 @@ git comit -m "feat: Initial setup"
 git remote add origin https://github_address
 git push origin master
 git pull origin master
-
-
-
+'''
 
 ## Python Foundation:
 
@@ -34,5 +32,17 @@ git pull origin master
 -- list
 -- Array
 -- Comprehension
--- Debugging
---```
+-- Packages & Debugging
+
+
+## Pip commands:
+'''
+windows pip | macos pip3
+
+pip list
+pip install pillow
+pip uninstall pillow
+pip show pillow
+pip freeze > requirements.txt
+
+'''
